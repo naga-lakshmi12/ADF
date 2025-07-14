@@ -15,14 +15,14 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "AzureSqlTable6",
+						"referenceName": "AzureSqlTable7",
 						"type": "DatasetReference"
 					},
 					"name": "sink1"
 				},
 				{
 					"dataset": {
-						"referenceName": "AzureSqlTable5",
+						"referenceName": "AzureSqlTable8",
 						"type": "DatasetReference"
 					},
 					"name": "sink2"
@@ -50,14 +50,12 @@
 				"split1@valid sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     input(",
-				"          instance_id as string,",
-				"          instance_name as string,",
-				"          type_name as string,",
-				"          type_version as string,",
-				"          description as string,",
-				"          type_stream as binary,",
-				"          date_created as timestamp,",
-				"          created_by as string",
+				"          SalesDate as date,",
+				"          SalesMan as string,",
+				"          Item as string,",
+				"          Units as integer,",
+				"          Unit_price as decimal(10,2),",
+				"          Sale_amt as decimal(10,2)",
 				"     ),",
 				"     deletable:false,",
 				"     insertable:true,",
@@ -70,14 +68,12 @@
 				"split1@invalid sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     input(",
-				"          instance_id as string,",
-				"          instance_name as string,",
-				"          type_name as string,",
-				"          type_version as string,",
-				"          description as string,",
-				"          type_stream as binary,",
-				"          date_created as timestamp,",
-				"          created_by as string",
+				"          SalesDate as date,",
+				"          SalesMan as string,",
+				"          Item as string,",
+				"          Units as integer,",
+				"          Unit_price as decimal(10,2),",
+				"          Sale_amt as decimal(10,2)",
 				"     ),",
 				"     deletable:false,",
 				"     insertable:true,",

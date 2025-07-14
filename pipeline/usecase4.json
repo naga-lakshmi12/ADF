@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Data flow1",
+				"name": "data flow",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [
 					{
@@ -23,7 +23,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "dataflow3",
+						"referenceName": "dataflow2",
 						"type": "DataFlowReference"
 					},
 					"compute": {
@@ -55,7 +55,7 @@
 				"type": "SetVariable",
 				"dependsOn": [
 					{
-						"activity": "Data flow1",
+						"activity": "data flow",
 						"dependencyConditions": [
 							"Succeeded"
 						]
