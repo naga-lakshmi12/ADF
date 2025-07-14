@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText8",
+	"name": "silver",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "Gold",
+				"folderPath": "Silver",
 				"fileSystem": "target"
 			},
 			"columnDelimiter": ",",
