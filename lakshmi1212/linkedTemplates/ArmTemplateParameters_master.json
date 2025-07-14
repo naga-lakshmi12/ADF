@@ -20,6 +20,9 @@
 		"AzureSqlDatabase2_password": {
 			"value": ""
 		},
+		"AzureSqlDatabase3_password": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://lakshmi3653.dfs.core.windows.net/"
 		},
@@ -39,6 +42,15 @@
 			"value": "master"
 		},
 		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "test"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_server": {
+			"value": "nagalakshmi123.database.windows.net"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_database": {
+			"value": "lakshmi1234"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_userName": {
 			"value": "test"
 		},
 		"containerUri": {
