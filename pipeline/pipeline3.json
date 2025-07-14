@@ -1,6 +1,7 @@
 {
 	"name": "pipeline3",
 	"properties": {
+		"description": "run",
 		"activities": [
 			{
 				"name": "Set-Start-Time",
