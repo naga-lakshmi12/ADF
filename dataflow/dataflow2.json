@@ -22,7 +22,7 @@
 				},
 				{
 					"dataset": {
-						"referenceName": "AzureSqlTable4",
+						"referenceName": "AzureSqlTable5",
 						"type": "DatasetReference"
 					},
 					"name": "sink2"
@@ -46,8 +46,8 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 split(Units > 0 && toDecimal(Unit_price) >= 0.0 && toDecimal(Sale_amt) >= 0.0 &&!isNull(SalesMan) &&!isNull(SalesDate) &&!isNull(Item),",
-				"     disjoint: false) ~> split1@(stream)",
-				"split1@stream sink(allowSchemaDrift: true,",
+				"     disjoint: false) ~> split1@(valid, invalid)",
+				"split1@valid sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     input(",
 				"          instance_id as string,",
@@ -68,7 +68,7 @@
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
 				"     errorHandlingOption: 'stopOnFirstError') ~> sink1",
-				"split1@stream sink(allowSchemaDrift: true,",
+				"split1@invalid sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     input(",
 				"          instance_id as string,",
