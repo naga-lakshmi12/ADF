@@ -1,0 +1,9 @@
+{
+	"name": "lakshmi121",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "075f42ce-28a0-48a7-8fd3-143037eb3d9f",
+		"tenantId": "76a2ae5a-9f00-4f6b-95ed-5d33d77c4d61"
+	}
+}
